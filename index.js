@@ -1,9 +1,7 @@
 const express = require("express");
 const app = express();
-const dotenv = require("dotenv");
+const dotenv = require("dotenv").config();
 const openaiRoute = require("./routes/openai");
-
-dotenv.config();
 
 // allow to take json files
 app.use(express.json());
